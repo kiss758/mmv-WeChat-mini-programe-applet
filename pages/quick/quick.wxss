@@ -1,0 +1,36 @@
+/* pages/quick/quick.wxss */
+.title{margin-top: 89rpx;text-align: center;font-size: 40rpx;margin-bottom: 22rpx;}
+
+.stitle{text-align: center;font-size:24rpx;margin-bottom: 76rpx;}
+.areaimg{width:650rpx;height: 427rpx;border: 1px solid  ;margin: 0 auto;margin-bottom: 54rpx;}
+.areaimg image{width:650rpx;height: 400rpx;margin-bottom: 27rpx;}
+.areaimg view{font-size: 21rpx;color: #cc9f84;text-align: right;}
+
+
+.club{width: 650rpx;height: 350rpx;margin: 0 auto;background: #fff;}
+.club view:first-child{font-size: 40rpx;margin-bottom: 16rpx;padding-top: 57rpx;margin-left: 77rpx;}
+.club view:nth-child(2){background-color: #cc9f84;width: 200rpx;height: 50rpx;text-align: center;color: #fff;margin-bottom: 30rpx;margin-left: 77rpx;font-size: 30rpx;line-height: 50rpx;}
+.club view:nth-child(3){font-size: 20rpx;margin-left: 77rpx;margin-right: 68rpx;}
+
+
+.equity{width: 650rpx;margin: 0 auto;background: #fff;margin-top: 50rpx;}
+
+.equity view:first-child{font-size: 40rpx;margin-bottom: 16rpx;padding-top: 57rpx;margin-left: 77rpx;}
+.equity view:nth-child(2){background-color: #cc9f84;width: 270rpx;height: 50rpx;text-align: center;color: #fff;margin-bottom: 30rpx;margin-left: 77rpx;font-size: 24rpx;line-height: 50rpx;}
+.equity view:nth-child(3){font-size: 20rpx;margin-left: 77rpx;margin-right: 68rpx;}
+.equity view:nth-child(4){font-size: 20rpx;color:#cc9f84;text-align: right;margin-right: 30rpx;}
+
+
+.birthday{width: 650rpx;margin: 0 auto;background: #fff;}
+.birthday view:first-child{font-size: 40rpx;margin-bottom: 16rpx;padding-top: 57rpx;margin-left: 77rpx;}
+.birthday view:nth-child(2){background-color: #cc9f84;width: 270rpx;height: 50rpx;text-align: center;color: #fff;margin-bottom: 30rpx;margin-left: 77rpx;font-size: 24rpx;line-height: 50rpx;}
+.birthday view:nth-child(3){font-size: 20rpx;margin-left: 77rpx;margin-right: 68rpx;}
+.birthday view:nth-child(4){font-size: 20rpx;color:#cc9f84;text-align: right;margin-right: 30rpx;}
+.birthday{}
+
+
+
+
+
+
+.b_select{width:400rpx;height: 80rpx;background: #000000;color:#fff;margin: 0 auto;text-align: center;line-height: 80rpx;font-size: 24rpx;}

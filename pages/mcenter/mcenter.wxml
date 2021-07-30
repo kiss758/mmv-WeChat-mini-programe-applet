@@ -1,0 +1,20 @@
+<!--pages/mcenter/mcenter.wxml-->
+<!-- <view class="mcontainer">
+  <view class="memberlist">
+     <image src="/images/mcenter/bg.png"></image>
+  </view>
+  <view class="mblist">
+     <view bindtap="jf">
+        <image src="/images/mcenter/top1.png"></image>
+     </view>
+     <view>
+        <image src="/images/mcenter/top2.png"></image>
+     </view>
+     <view>
+        <image src="/images/mcenter/top3.png"></image>
+     </view>
+     <view>
+        <image src="/images/mcenter/top4.png"></image>
+     </view>
+  </view>
+</view> -->

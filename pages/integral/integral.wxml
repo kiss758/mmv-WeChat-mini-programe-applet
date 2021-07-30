@@ -1,0 +1,35 @@
+<view>
+   <view class="head_img">
+      <image src="/images/inter/6.png"></image>
+   </view>
+   <view class="list">
+       <view>
+           <image src="/images/inter/1.png"></image>
+           <view>晒图大赛</view>
+           <view>参与送100积分</view>
+       </view>
+       <view>
+           <image src="/images/inter/2.png"></image>
+           <view>VIP打卡</view>
+           <view>参与送50积分</view>
+       </view>
+       <view>
+           <image src="/images/inter/3.png"></image>
+           <view>新用户关注公众号</view>
+           <view>参与送100积分</view>
+       </view>
+       <view>
+           <image src="/images/inter/4.png"></image>
+           <view>每月抽奖</view>
+           <view>参与送50积分</view>
+       </view>
+       <view>
+           <image src="/images/inter/5.png"></image>
+           <view>会员注册</view>
+           <view>参与送100积分</view>
+       </view>
+   </view>
+   <view class="list_btn">
+       <view bindtap="backindex">返回首页</view>
+   </view>
+</view>

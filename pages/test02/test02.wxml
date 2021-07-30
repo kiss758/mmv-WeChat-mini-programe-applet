@@ -1,0 +1,6 @@
+<block wx:for="{{itemList}}" wx:key="id">
+  <view class='item_container' bindtap='itemSelected' data-index='{{index}}'>
+     <image class='select_icon' src="{{item.isSelected?'/images/b_select.png':'/images/n_select.png'}}"></image>
+     <text class='text'>{{item.name}}</text>
+  </view>
+</block>

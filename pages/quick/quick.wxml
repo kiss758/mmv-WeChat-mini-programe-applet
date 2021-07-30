@@ -1,0 +1,39 @@
+<!--pages/quick/quick.wxml-->
+<view>
+   <view class="title">欢迎来到mmV会员俱乐部</view>
+   <view class="stitle">任意消费一次即可升级普通会员</view>
+   <view class="areaimg">
+      <image></image>
+      <view>进阶更高权益></view>
+   </view>
+   <view class="club">
+      <view>铂金俱乐部</view>
+      <view>入会规则</view>
+      <view>在mmV官网、官方小程序商城、天猫官方旗舰店、京东自营官方店、小红书商城、微信渠道年消费20,000或单笔消费满10,000元，即可升级为铂金会员</view>
+   </view>
+   <view class="equity">
+       <view>4大权益</view>
+       <view>独享多倍积贵宾兑礼</view>
+       <view>
+       【铂金俱乐部】贵宾每消费1元可享积分1.5分
+积分可兑换：全线明星产品正装
+       </view>
+       <view>一键兑礼 ></view>
+   </view>
+   <view class="birthday">
+       <view>每逢生日有好礼</view>
+       <view>mmV为您准备了一份满满的生日惊喜 *mmV洗护系列体验
+套装赠送券</view>
+       <view>
+       生日月首笔消费可享3倍积分（积分上限20,000元）
+*生日当月首笔消费可使用礼品券
+       </view>
+   </view>
+
+
+
+   
+   <view class="b_select">
+     <view>升级查看更多会员权益</view>
+   </view>
+</view>

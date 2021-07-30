@@ -1,0 +1,319 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/huiyuan/index",
+          "pathName": "pages/huiyuan/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/form/index",
+          "pathName": "pages/form/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/get_userpz/index",
+          "pathName": "pages/get_userpz/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/get_user_info/index",
+          "pathName": "pages/get_user_info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages1/nihuawocai/index",
+          "pathName": "pages1/nihuawocai/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/index",
+          "pathName": "pages/flow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "分类",
+          "pathName": "pages/category/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goods/index",
+          "pathName": "pages/goods/index",
+          "query": "goods_id=10060",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/member/member",
+          "pathName": "pages/member/member",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/index",
+          "pathName": "pages/flow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/index",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/help/help",
+          "pathName": "pages/help/help",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/showmember/showmember",
+          "pathName": "pages/showmember/showmember",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/official/official",
+          "pathName": "pages/official/official",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/integral/integral",
+          "pathName": "pages/integral/integral",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mcenter/mcenter",
+          "pathName": "pages/mcenter/mcenter",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/quick/quick",
+          "pathName": "pages/quick/quick",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/exchange/exchange",
+          "pathName": "pages/exchange/exchange",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/index",
+          "pathName": "pages/flow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test02/test02",
+          "pathName": "pages/test02/test02",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/checkout",
+          "pathName": "pages/flow/checkout",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/integmsg/integmsg",
+          "pathName": "pages/integmsg/integmsg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/c/index",
+          "pathName": "pages/flow/checkout",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/member/terms_of_use",
+          "pathName": "pages/member/terms_of_use",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/member/privacy_policy",
+          "pathName": "pages/member/privacy_policy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/flow/index",
+          "pathName": "pages/flow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/category/index",
+          "pathName": "pages/category/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/testtest",
+          "pathName": "pages/testtest",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/testtest/index",
+          "pathName": "pages/testtest/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/member/member",
+          "pathName": "pages/member/member",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

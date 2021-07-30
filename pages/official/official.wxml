@@ -1,0 +1,10 @@
+<!--pages/official/official.wxml-->
+<view class="official">
+  <view>
+    <image  bindtap="previewImage" mode="widthFix"  data-src="/images/office/wx.png" src="/images/office/wx.png"></image>
+  </view>
+  <view>
+       <view>长按保存二维码或微信搜索“mmV胶原蛋白肽”</view> 
+       <view>关注微信公众号，获取更多品牌资讯</view>
+  </view>
+</view>

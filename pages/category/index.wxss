@@ -1,0 +1,67 @@
+/* .index-search-box {
+    top: 1rpx;
+    left: 0rpx;
+    right: 0rpx;
+    z-index: 999;
+    position: fixed;
+    background: #fff;
+    padding: 18rpx 13rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.index-search {
+    border-bottom: 0;
+    background: #fff;
+    border-radius: 50rpx;
+    overflow: hidden;
+    position: relative;
+    font-size: 28rpx;
+    color: #999;
+    box-sizing: border-box;
+    height: 64rpx;
+    line-height: 64rpx;
+} */
+
+
+ .item .title {
+  font-size: 24rpx;
+  height:80rpx;
+  background: #fff;
+  display: flex;
+  color: #000000;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  
+}
+ .item .tb {
+  color: #cc9f84;
+  font-size: 24rpx;
+  height:80rpx;
+  background: #fff;
+  display: flex;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  
+}
+
+
+.item .detail {
+  margin: 20rpx auto;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  text-indent:40rpx;
+}
+
+
+/* 搜索栏样式 */
+.searchbox{width: 92%;height:80rpx;border: 1px solid black;margin: 0 auto;box-sizing: border-box;margin-top: 50rpx;margin-bottom: 46rpx;}
+.searchbox navigator{display: flex;}
+.searchbox view:first-child{width:85%;height: 80rpx;color: #999999;padding-left: 26rpx;font-size: 24rpx;line-height: 80rpx;}
+.searchbox view:nth-child(2){height: 80rpx;box-sizing: border-box;} 
+.searchbox view:nth-child(2) image{width: 40rpx;height: 40rpx;margin-top: 20rpx;}
+
+.cate-name{font-size: 24rpx;margin-top: 49rpx;padding-left:50rpx;}
+.cate-active{color: #cc9f84;}
+.bgbox{width: 5rpx;height: 30rpx;background: #fff;display:inline-block;margin-top: 25rpx;margin-right: 10rpx;}
+.gbbox{width: 5rpx;height: 30rpx;display:inline-block;margin-top: 25rpx;margin-right: 10rpx; background: #cc9f84;}
+

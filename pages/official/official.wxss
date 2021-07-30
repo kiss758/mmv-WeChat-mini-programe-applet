@@ -1,0 +1,5 @@
+.official{width: 100%;}
+.official>view:first-child{text-align: center;margin-top:163rpx;margin-bottom: 71rpx;}
+.official>view:first-child image{width:310rpx;height: 302rpx;}
+
+.official>view:nth-child(2){text-align: center;font-size: 24rpx;}

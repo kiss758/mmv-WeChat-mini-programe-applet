@@ -1,0 +1,29 @@
+<view>
+   <view class="title">
+      <image mode="widthFix" src="/images/interhis.jpg"></image>
+   </view>
+
+   <view style="text-align:center;" wx:if="{{data.UserMemberIntegralDetails_list==''}}">
+     无积分记录
+   </view>
+
+   <view wx:for="{{data.UserMemberIntegralDetails_list}}" class="historical">
+      <view class="hisitem">
+         <view>
+            <image  mode="widthFix" src="/images/exline.png"></image>
+         </view>
+         <view>
+            <view>{{item.create_time}}</view>
+            <view wx:if="{{item.type == 1}}">购买</view>
+            <view wx:if="{{item.type == 2}}">兑换</view>
+         </view>
+         <view>
+            <view  wx:if="{{item.type == 1}}">+{{item.integral_value}}积分</view>
+            <view style="color:green;"  wx:if="{{item.type == 2}}">-{{item.integral_value}}积分</view>
+         </view>
+      </view>
+   </view>
+   <view class="clickbtn"  bindtap='goBack'>
+      <view>返回</view>   
+   </view>
+</view>

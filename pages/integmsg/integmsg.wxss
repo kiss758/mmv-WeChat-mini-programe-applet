@@ -1,0 +1,10 @@
+.title{width: 100%}
+.title image{width: 100%;margin-bottom: 50rpx;}
+
+.hisitem{display: flex;align-items: center;width: 562rpx;margin: 5rpx auto;}
+.hisitem>view:first-child image{width:14rpx;margin-right: 16rpx;}
+.hisitem>view:nth-child(2){font-size: 24rpx;}
+.hisitem>view:nth-child(3){font-size: 24rpx;color: #cc9f84;margin-top: 35rpx;margin-left: auto;}
+
+.clickbtn{width: 562rpx;height: 80rpx;background-color: #181818;margin: 0 auto;color: #fff;margin-top: 86rpx;text-align: center;margin-bottom: 110rpx;}
+.clickbtn view{line-height: 80rpx;width: 100%;height: 80rpx;}

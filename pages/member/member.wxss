@@ -1,0 +1,124 @@
+/* 
+.pannel-box{width: 90%;margin:30rpx auto;background: white;padding: 25rpx;}
+.username{width: 100%;height: 80rpx;display: flex;border-bottom:1rpx solid #e5e5e5;}
+.user-input{height: 80rpx;font-size: 28rpx;}
+.user-title{width: 20%;letter-spacing: 2rpx;height:80rpx;line-height: 80rpx;font-size:28rpx;font-weight: bold;}
+.user-text{width: 80%;}
+
+
+.phone_title{width: 20%;letter-spacing: 2rpx;height:80rpx;line-height: 80rpx;font-size:28rpx;font-weight: bold;}
+.user-phone{width: 80%;height:80rpx;line-height: 80rpx;font-size:24rpx;color:#969696;}
+
+.section{width: 100%;display: flex;line-height: 80rpx;border-bottom:1rpx solid #e5e5e5;}
+.section__title{width: 20%;font-size: 28rpx;letter-spacing:12rpx;font-weight: bold;}
+.section picker{padding: 0;height: 80rpx;font-size: 24rpx;color: #969696;} 
+.section_time{width: 80%;}
+
+.user-photo{width: 100%;height: 80rpx;display: flex;border-bottom:1rpx solid #e5e5e5;justify-content: center;align-items: center;}
+.user-usernumber{height: 80rpx;font-size: 28rpx;}
+.usernumber{width: 20%;letter-spacing: 2rpx;height:80rpx;line-height: 80rpx;font-size:28rpx;font-weight: bold;}
+.numbermsg{width: 50%;}
+.getyz{width: 30%;height: 60rpx;margin-right: 20rpx;}
+.getyz button{font-size: 20rpx;height: 60rpx; line-height:60rpx;background: #000000;color: #ffff;border-radius: 0;}
+.photo-input{height: 80rpx;font-size: 24rpx;}
+.btn-bind{height: 80rpx;margin-bottom: 24rpx;margin-top: 29rpx;}
+.btn-bind button{border-radius: 0px;color:white;font-size: 30rpx;background-color: #181818;height: 80rpx;line-height: 80rpx;letter-spacing: 2rpx;}
+.mdetails{font-size: 24rpx;line-height:40rpx;}
+
+.reg-box{display: flex;margin-top: 45rpx;}
+
+checkbox .wx-checkbox-input {
+  width: 27rpx;
+  height: 27rpx;
+}
+.reg-tip{font-size: 20rpx;height: 50rpx;}
+.reg-tip text{border-bottom: 1px solid #585858;} */
+
+
+
+
+
+/* ---弹窗css--- */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  color: #fff;
+}
+.modal-dialog {
+  width: 72%;
+  position: absolute;
+  top: 30%;
+  left: 14%;
+  background: #fff;
+  border-radius: 12rpx;
+  z-index: 999999; 
+}
+.modal-content{
+  text-align: center;
+}
+.modal-content .show{
+  width: 450rpx;
+  height: 323rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: -118rpx;
+  z-index: 10000;
+}
+.iconWx{
+  width:52rpx;
+  height: 41rpx;
+  padding-right: 20rpx;
+}
+.iconPhone{
+  width:56rpx;
+  height: 56rpx;
+  padding-right: 15rpx;
+}
+.modal-content view:nth-of-type(2){
+  font-size: 38rpx;
+  color: #333333;
+  line-height: 1;
+}
+.modal-content view:nth-of-type(3){
+  font-size: 26rpx;
+  color: #9c9c9c;
+  margin: 18rpx 0 29rpx;
+  line-height: 1;
+}
+.modal-content button:nth-of-type(1){
+  width: 80%;
+  height: 80rpx;
+  border-radius: 60rpx;
+  margin: 0 auto 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #31cc32;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+.modal-content button:nth-of-type(1)::after{
+  border: none;
+}
+.modal-content  .wxLogin{
+  font-size: 26rpx;
+  color: #424242;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 38rpx 0 80rpx;
+}
+button::after{
+  border: none;
+}
+/* ---弹窗css--- */

@@ -1,0 +1,278 @@
+ <view class="container m-b5">
+
+  <!--登录弹窗-->
+  <!--<button class='phone-text'   open-type="getUserInfo"  lang="zh_CN" bindgetuserinfo="onGotUserInfo">请登录</button>-->
+<view class="modal-mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-content">
+    <view>
+      <!--<image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWq4icl43rnBA20xfaBL7zK2e1CeiaXbA7Cibj8C7UicLZG9WANTwRMtC5uiaergkfjbIX99hqaxKbpUA/132' class='show'></image>-->
+      <view class="show"></view>
+    </view>
+    <view>绑定手机号</view>
+    <view>请先绑定手机号在进行此操作</view>  
+    <button open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">
+     
+     <!--<image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWq4icl43rnBA20xfaBL7zK2e1CeiaXbA7Cibj8C7UicLZG9WANTwRMtC5uiaergkfjbIX99hqaxKbpUA/132' class='iconWx'></image>-->
+     微信用户一键绑定
+    </button>
+  </view>
+</view>
+<!--登录弹窗-->
+
+  <!-- <view class="user-header p-r">
+    <view class="user-bg-box">
+      <image class="header-bg" src="{{userInfo.avatarUrl}}"></image>
+       <open-data class="header-bg" type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view>
+    <view class="user-order">
+      <view class="user-order-cont dis-flex">
+        <view class="flex-box p-r">
+          <navigator hover-class="navigator-hover" url="../order/index?type=all">
+            <text class="iconfont icon-form orderListIcon "></text>
+            <text class="listCont">全部订单</text>
+          </navigator>
+        </view>
+        <view class="flex-box p-r">
+          <navigator hover-class="navigator-hover" url="../order/index?type=payment">
+            <text class="iconfont icon-daifukuan orderListIcon "></text>
+            <text class="listCont">待付款</text>
+            <text class="user-tag p-a" wx:if="{{orderCount.payment > 0}}">{{orderCount.payment}}</text>
+          </navigator>
+        </view>
+        <view class="p-r" style=" flex:1.4;">
+          <view class="header-img-box">
+              <image src="{{userInfo.avatarUrl}}"></image> 
+             <open-data type="userAvatarUrl"></open-data> 
+          </view>
+          <text class="user-admin onelist-hidden">{{userInfo.nickName}}</text>
+           <open-data class="user-admin onelist-hidden" type="userNickName"></open-data>  
+        </view>
+        <view class="flex-box p-r">
+          <navigator hover-class="navigator-hover" url="../order/index?type=received">
+            <text class="iconfont icon-daishouhuo orderListIcon"></text>
+            <text class="listCont">待收货</text>
+            <text class="user-tag p-a" wx:if="{{orderCount.received > 0}}">{{orderCount.received}}</text>
+          </navigator>
+        </view>
+        <view class="flex-box p-r">
+          <text class="iconfont icon-daipingjia orderListIcon "></text>
+          <text class="listCont">待评价</text>
+          <text class="user-tag p-a" wx:if="{{false}}"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+   -->
+  <view class="wflist">
+      <view class="wtop">  
+         <view class="user-photo">
+            <image class="user-img" src="{{userInfo.avatarUrl}}"></image>
+         </view>
+         <view>
+             <view class="t-name">
+                <view style="background:{{background}};width:{{width}}">{{userInfo.nickName}}</view>
+                <button bindtap="addclick" wx:id="{{userInfo.user_id}}" wx:if="{{member_id}}">{{complete}}</button>
+                <button open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber" wx:id="{{userInfo.user_id}}" wx:else>{{addmess}}</button>
+             </view>    
+             <view class="integral" wx:if="{{member_id}}">
+                <image style="display:none" src=""></image>
+                <view style="margin-right:15rpx;">mmV粉丝</view>    
+                <view><text>{{user.member.integral>=0?user.member.integral:'0'}} </text>积分</view>
+             </view>                                       
+            <view class="progress-box" wx:if="{{member_id}}">
+              <progress color="#cc9f84" percent="{{provalue}}"  stroke-width="3" />
+            </view>
+             <view class="upgrade" wx:if="{{member_id}}" style="display:none">
+                <view>再购买1元可保级/升级</view>
+                <view></view>
+             </view>
+         </view>
+
+      </view>
+      <view class="liner"></view>
+      <!-- <view class="wbot" wx:if="{{member_id}}">
+          <view>
+             <view><image src="/images/born.png"></image></view>
+             <view>生日礼遇</view>
+          </view>
+          <view>
+             <view><image src="/images/jf.png"></image></view>
+             <view>购物积分</view>
+          </view>
+          <view>
+            <view><image src="/images/select.png"></image></view>
+            <view style="color: #cc9f84;">更多权益</view>
+          </view>
+      </view> -->
+
+
+  </view>
+  <view class="orderall">
+     <navigator  url="../order/index?type=all">
+      <view class="dis-flex b-f b-n">
+        <view class="flex-box">
+          <text class="ordertitle">订单中心</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+      <view class="b-g"></view>
+    </navigator>
+    <view class="orderlist">
+       <view class="o-flex">
+          <navigator hover-class="navigator-hover" url="../order/index?type=payment">
+            <view><image src="/images/wf.png"></image></view>
+            <view>未付款 <text class="user-tag p-a" wx:if="{{orderCount.payment > 0}}">{{orderCount.payment}}</text>
+            <text class="user-tag p-a" wx:else>0</text></view>
+          </navigator>
+       </view>
+       <view class="o-flex">
+          <navigator hover-class="navigator-hover" url="../order/index?type=delivery">
+            <view><image src="/images/df.png"></image></view>
+            <view>待发货<text class="user-tag p-a" wx:if="{{orderCount.delivery > 0}}">{{orderCount.delivery}}</text>
+            <text class="user-tag p-a" wx:else>0</text></view>
+          </navigator>
+       </view>
+      <view class="o-flex">
+         <navigator hover-class="navigator-hover" url="../order/index?type=received">
+           <view><image src="/images/ds.png"></image></view>
+           <view>待收货<text class="user-tag p-a" wx:if="{{orderCount.received > 0}}">{{orderCount.received}}</text>
+           <text class="user-tag p-a" wx:else>0</text></view>
+        </navigator>
+      </view>
+      <view class="o-flex">
+        <navigator hover-class="navigator-hover" url="../order/index?type=complete">
+          <view><image src="/images/ys.png"></image></view>
+          <view>已签收<text class="user-tag p-a" wx:if="{{orderCount.complete > 0}}">{{orderCount.complete}}</text>
+           <text class="user-tag p-a" wx:else>0</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="m-top20 permess">
+    <!-- <navigator url="../address/index">
+      <view class="user-order-title dis-flex b-f m-top20">
+        <view class="flex-box">
+          <text class="iconfont icon-map common-icon"></text>
+          <text class="user-orderName h4">收货地址</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </navigator> -->
+    <navigator url="../exchange/exchange">
+      <view class="user-order-title dis-flex b-f">
+        <view class="flex-box">
+          <view class="left_nv">
+             <image  src="/images/user/value.png" ></image>
+          </view> 
+          <text class="user-orderName h4">积分兑换</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../integmsg/integmsg">
+      <view class="user-order-title dis-flex b-f">
+        <view class="flex-box">
+          <view class="left_nv">
+             <image  src="/images/user/value.png" ></image>
+          </view> 
+          <text class="user-orderName h4">积分明细</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../help/help">
+      <view class="user-order-title dis-flex b-f">
+        <view class="flex-box">
+          <view class="left_nv">
+             <image  src="/images/user/help.png" ></image>
+          </view> 
+          <text class="user-orderName h4">帮助中心</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+    <!-- <navigator url="../mcenter/mcenter">
+      <view class="user-order-title dis-flex b-f">
+        <view class="flex-box">
+          <view class="left_nv">
+             <image  src="/images/user/member.png" ></image>
+          </view> 
+          <text class="user-orderName h4">会员中心</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </navigator> -->
+
+    <navigator url="../official/official">
+      <view class="user-order-title dis-flex b-f">
+        <view class="flex-box">
+          <view class="left_nv">
+             <image  src="/images/user/public.png" ></image>
+          </view> 
+          <text class="user-orderName h4">关注公众号</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+    
+<!-- 
+    <navigator url="../integral/integral">
+      <view class="user-order-title dis-flex b-f">
+        <view class="flex-box">
+          <view class="left_nv">
+             <image  src="/images/user/jifen.png" ></image>
+          </view> 
+          <text class="user-orderName h4">赚取积分</text>
+        </view>
+        <view class="flex-box">
+          <view class="user-orderContBox">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+     -->
+   
+  </view>
+
+  <view>
+  
+      
+  </view>
+
+</view>

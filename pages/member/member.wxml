@@ -1,0 +1,76 @@
+<!-- <view>
+  <view class="pannel-box">
+     <view class="username">
+        <view class="user-title">用户名</view>
+        <view class="user-text"><input class="user-input" bindinput='getUsername' disabled="true" name="username" placeholder="仅可填写一次" value="{{userInfo.nickName}}" /></view>
+      </view>
+      <view class="section">
+        <view class="section__title">生    日</view>
+        <view class="section_time">
+          <picker mode="date" value="{{date}}" start="1900-01-01" end="5000-05-08" bindchange="bindDateChange">
+              {{date}}{{defvalue}}
+          </picker>
+        </view>       
+      </view>
+      
+      <view class="section">
+        <view class="phone_title">手机号</view>
+        <view class="section_time">
+          <view class="user-text"><input class="user-phone"  type="number"  bindinput='getPhoneValue' value='{{phone}}'  name="userphone" placeholder="请输入手机号"  /></view>
+        </view>
+      </view>
+      <view class="user-photo">
+        <view class="usernumber">验证码</view>
+        <view class="numbermsg"><input class="photo-input"  type="number" bindinput='getCodeValue' value='{{code}}'  name="usercode"  placeholder="请输入验证码" /></view>
+        <view class="getyz"><button bindtap='getVerificationCode' disabled='{{disabled}}' >{{codename}}</button></view>
+      </view>
+
+
+      <view class="reg-box">
+        <view class="reg-fx">
+          <checkbox-group bindchange="HandelItemChange">
+            <checkbox value="{{checkbox}}" ></checkbox>
+          </checkbox-group>
+        </view>
+        <view class="reg-tip">
+           我同意依照使用条款和隐私政策对我个人信息进行收集和使用,我已阅读并确认已被给予充分机会理解该<text bindtap="usereg">使用条款</text>和<text bindtap="pwdreg">隐私政策</text>的内容
+        </view>
+      </view>
+    
+
+
+
+      <view class="btn-bind">
+         <button bindtap="save">确定绑定</button>
+      </view>
+
+      
+  </view>
+</view> -->
+
+<view>
+
+
+  
+<!--登录弹窗-->
+<!--<button class='phone-text'   open-type="getUserInfo"  lang="zh_CN" bindgetuserinfo="onGotUserInfo">请登录</button>-->
+<view class="modal-mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+<view class="modal-content">
+  <view>
+    <!--<image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWq4icl43rnBA20xfaBL7zK2e1CeiaXbA7Cibj8C7UicLZG9WANTwRMtC5uiaergkfjbIX99hqaxKbpUA/132' class='show'></image>-->
+    <view class="show"></view>
+  </view>
+  <view>绑定手机号</view>
+  <view>请先绑定手机号在进行此操作</view>  
+  <button open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">
+   
+   <!--<image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWq4icl43rnBA20xfaBL7zK2e1CeiaXbA7Cibj8C7UicLZG9WANTwRMtC5uiaergkfjbIX99hqaxKbpUA/132' class='iconWx'></image>-->
+   微信用户一键绑定
+  </button>
+</view>
+</view>
+<!--登录弹窗-->
+
+
+</view>

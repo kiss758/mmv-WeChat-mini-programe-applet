@@ -1,0 +1,170 @@
+<view class="container">
+  <!-- header -->
+  <view class="c_header">
+    <view bindtap='jump_category'>
+      <image src="/images/list.png" mode="scaleToFill"></image>
+    </view>
+    <view>
+      <image src="/images/mmvlogo.png" mode="scaleToFill"></image>
+    </view>
+    <view class="mg-top-45" open-type='contact' style="position: relative;">
+      <image class="w-30" src="/images/cart_header.png"></image>
+      <button class="btncontact" open-type='contact'>.</button>
+    </view>
+    <view class="mg-top-45 w-30">
+      <image class="w-30" src="/images/call.png" bindtap="jump_cart"></image>
+    </view>
+  </view>
+  <!--header banner -->
+  <view class="h-1000">
+    <swiper circular="true" class="swiper-box" indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}"
+      interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{h_image}}" wx:key="index">
+        <navigator url="../goods/index?goods_id={{item.goods_id}}">
+          <swiper-item class="swiper-item">
+            <image class="slide-image" src="{{item.file_path}}"></image>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+  <!-- 搜索框 -->
+  <view class="searchbox">
+    <navigator class="cont" hover-class="none" openType="navigate" url="../search/index">
+      <view>人气胶原蛋白肽D完美年度套装</view>
+      <view>
+        <image src="/images/search.png"></image>
+      </view>
+    </navigator>
+  </view>
+  <!-- carousel -->
+  <view style="height:auto">
+    <text class="mustbuy_list">必BUY套装</text>
+    <view class="swiper-container" style="margin-top:40rpx;height:400rpx">
+      <swiper circular="true" autoplay interval="2000" previous-margin="225rpx" next-margin="225rpx">
+        <block>
+          <swiper-item class="swiper-list carousel" wx:for="{{mustbuy_list}}" wx:key="index">
+            <navigator wx:key="{{item.goods_id}}" hover-class="none" url="../goods/index?goods_id={{item.goods_id}}">
+              <view class="list-item" style="width:auto">
+                <view class="goodsImage" style="width:220rpx;height:240rpx">
+                  <image src="{{item.image[0].file_path}}" mode="scaleToFill"></image>
+                </view>
+                <view class="goodsName1">{{item.goods_name}}</view>
+                <view class="goodsPrice1">¥{{item.spec[0].goods_price}}/{{item.spec[0].goods_box}}</view>
+              </view>
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!-- 视频 -->
+  <view style="text-align:center;">
+    <video style=" width: 92%; height:400rpx;margin-bottom: 79rpx;" controls="false" autoplay="{{false}}" id="myVideo4"
+      data-index='4' bindplay="play" bindplay="videoPlay"
+      src='https://video.mmvau.com/video_list/indexvideo.mp4'></video>
+  </view>
+  <!-- 胶原蛋白 -->
+  <view class="oligomeric">
+    <view class="olig_header">
+      <swiper indicator-dots="{{indicatordots}}" circular="true" class="swiper_banner">
+        <block>
+          <swiper-item wx:for="{{collagen_banner_list}}" wx:key="index">
+            <image src="{{item.file_path}}" mode="scaleToFill" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="olig_title">
+      <view class="olig_big_title">胶原蛋白肽系列</view>
+      <view class="olig_sm_title">胶原满满 焕发青春光采</view>
+      <view class="olig_line">
+        <view></view>
+      </view>
+    </view>
+    <view class="swiper-container">
+      <swiper circular="true" indicator-dots="{{indicatordots}}" next-margin="320rpx">
+        <block>
+          <swiper-item class="swiper-list" wx:for="{{collagen_list}}" wx:key="index">
+            <navigator wx:key="{{item.goods_id}}" url="../goods/index?goods_id={{item.goods_id}}">
+              <view class="list-item">
+                <view class="goodsImage">
+                  <image src="{{item.image[0].file_path}}" mode="scaleToFill"></image>
+                </view>
+                <view class="goodsName">{{item.goods_name}}</view>
+                <view class="goodsPrice">¥{{item.spec[0].goods_price}}/{{item.spec[0].goods_box}}</view>
+                <view class="onpay">立即购买 ></view>
+              </view>
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!--低聚肽-->
+  <view class="oligomeric">
+    <view class="olig_header">
+      <swiper indicator-dots="{{indicatordots}}" circular="true" class="swiper_banner">
+        <block>
+          <swiper-item wx:for="{{dijutai_banner_list}}" wx:key="index">
+            <image src="{{item.file_path}}" mode="scaleToFill" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="olig_title">
+      <view class="olig_big_title">低聚肽系列</view>
+      <view class="olig_sm_title">解锁美丽 持久纵享高光时刻</view>
+      <view class="olig_line">
+        <view></view>
+      </view>
+    </view>
+    <view class="swiper-container">
+      <swiper circular="true" indicator-dots="{{indicatordots}}" next-margin="320rpx">
+        <block>
+          <swiper-item class="swiper-list" wx:for="{{dijutai_list}}" wx:key="index">
+            <navigator wx:key="{{item.goods_id}}" url="../goods/index?goods_id={{item.goods_id}}">
+              <view class="list-item">
+                <view class="goodsImage">
+                  <image mode="scaleToFill" src="{{item.image[0].file_path}}"></image>
+                </view>
+                <view class="goodsName">{{item.goods_name}}</view>
+                <view class="goodsPrice">¥{{item.spec[0].goods_price}}/{{item.spec[0].goods_box}}</view>
+                <view class="onpay">立即购买 ></view>
+              </view>
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!-- 胶原蛋白肽视频合集 -->
+  <view class="oligomeric">
+    <view class="olig_title">
+      <view class="olig_big_title">胶原蛋白肽视频合集</view>
+      <view class="olig_sm_title">用胶原蛋白填满时光</view>
+      <view class="olig_line">
+        <view></view>
+      </view>
+    </view>
+    <view style="text-align:center;margin-top:80rpx">
+      <block wx:for='{{collagenVideoList}}' wx:key="id">
+        <view style="width:92%;height:400rpx;margin:50rpx auto">
+          <video src="{{item.videoUrl}}" style="width:100%;height:100%;" poster="{{item.videoCover}}" controls
+            objectFit='cover' id="myVideo{{index}}" data-index='{{index}}' bindplay="play" bindplay="videoPlay">
+          </video>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- footer banner -->
+  <view class="b_foot">
+    <swiper circular="true" class="swiper-box" indicator-dots="{{indicatordots}}">
+      <block wx:for="{{f_image}}" wx:key="index">
+        <swiper-item class="swiper-item">
+          <image class="slide-image" src="{{item.file_path}}" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

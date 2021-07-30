@@ -1,0 +1,5 @@
+
+.h_container{padding: 50rpx;}
+
+.h_title{font-size: 30rpx !important;font-weight: bold;margin:40rpx auto;}
+.content{font-size: 20rpx;margin-bottom: 38rpx;line-height:45rpx;}

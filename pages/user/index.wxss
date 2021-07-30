@@ -1,0 +1,141 @@
+.user-list {
+    padding: 30rpx 15rpx;
+}
+
+.user-list .li .common-icon {
+    font-size: 46rpx;
+}
+
+.user-list-service {
+    padding: 30rpx 0 0 0;
+}
+
+.user-list-service .li {
+    padding-bottom: 45rpx;
+}
+.wflist{width: 100%;background: black;z-index: 1;padding-bottom: 80rpx;}
+.wtop{width: 100%;display: flex;padding-bottom:50rpx;}
+.wtop>view:nth-child(2){width: 70%;}
+
+
+
+.user-photo{width: 100rpx;height: 100rpx;border-radius:100%;margin-top: 70rpx;margin-left: 60rpx;margin-right: 16rpx;}
+.user-img{width: 100rpx;height: 100rpx;border-radius: 100% !important;}
+
+.t-name{display: flex;margin-top: 70rpx;position: relative;margin-bottom:15rpx;}
+.t-name view:first-child{font-size: 30rpx;color: #fff}
+.t-name button:nth-child(2){font-size: 20rpx;background: #fff;text-align: center;right: 0;position: absolute;}
+
+
+.integral{display: flex;margin-bottom: 22rpx;color: white;}
+.integral view{font-size:20rpx;}
+
+.upgrade{font-size:20rpx;color: white;margin-top: 24rpx;text-align:right;}
+
+.wbot{color: white;font-size: 22rpx;display: flex;}
+.wbot>view{flex: 1;display:flex;flex-direction: column; align-items:center;justify-content: center;}
+.wbot image{width: 107rpx;height:46rpx;margin-left:64rpx;}
+.permess{width: 95%;margin: 24rpx auto;}
+.orderall{width: 95%;margin: 0 auto;font-size: 30rpx;position: relative;z-index: 2;margin-top: -40rpx;}
+.ordertitle{font-size: 30rpx;margin-left: 35rpx;position: absolute;top:25rpx;}
+
+
+
+.b-g{width:95%;height: 1rpx; background: #eee;margin: 0 auto;}
+.orderlist{height:150rpx;background: #fff;display: flex;align-items:center;justify-content: center;text-align: center;}
+.o-flex{flex: 1;font-size: 24rpx;position: relative;}
+.o-flex image{width: 45rpx;height: 45rpx;}
+
+
+.b-n{padding:10rpx 0rpx;}
+
+.left_nv{margin-top:12rpx;margin-left:28rpx;}
+.left_nv image{width:35rpx;height:35rpx;}
+/* .t-name>view:first-child{width: 350rpx;} */
+
+
+
+/* ---弹窗css--- */
+.modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    color: #fff;
+  }
+  .modal-dialog {
+    width: 72%;
+    position: absolute;
+    top: 30%;
+    left: 14%;
+    background: #fff;
+    border-radius: 12rpx;
+    z-index: 999999; 
+  }
+  .modal-content{
+    text-align: center;
+  }
+  .modal-content .show{
+    width: 450rpx;
+    height: 323rpx;
+    display: block;
+    margin: 0 auto;
+    margin-top: -118rpx;
+    z-index: 10000;
+  }
+  .iconWx{
+    width:52rpx;
+    height: 41rpx;
+    padding-right: 20rpx;
+  }
+  .iconPhone{
+    width:56rpx;
+    height: 56rpx;
+    padding-right: 15rpx;
+  }
+  .modal-content view:nth-of-type(2){
+    font-size: 38rpx;
+    color: #333333;
+    line-height: 1;
+  }
+  .modal-content view:nth-of-type(3){
+    font-size: 26rpx;
+    color: #9c9c9c;
+    margin: 18rpx 0 29rpx;
+    line-height: 1;
+  }
+  .modal-content button:nth-of-type(1){
+    width: 80%;
+    height: 80rpx;
+    border-radius: 60rpx;
+    margin: 0 auto 80rpx;
+    font-size: 30rpx;
+    color: #fff;
+    background: #31cc32;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .modal-content button:nth-of-type(1)::after{
+    border: none;
+  }
+  .modal-content  .wxLogin{
+    font-size: 26rpx;
+    color: #424242;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 38rpx 0 80rpx;
+  }
+  button::after{
+    border: none;
+  }
+  /* ---弹窗css--- */

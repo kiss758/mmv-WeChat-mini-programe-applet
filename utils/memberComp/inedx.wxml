@@ -1,0 +1,26 @@
+<view>
+
+
+  
+  <!--登录弹窗-->
+  <!--<button class='phone-text'   open-type="getUserInfo"  lang="zh_CN" bindgetuserinfo="onGotUserInfo">请登录</button>-->
+<view class="modal-mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-content">
+    <view>
+      <!--<image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWq4icl43rnBA20xfaBL7zK2e1CeiaXbA7Cibj8C7UicLZG9WANTwRMtC5uiaergkfjbIX99hqaxKbpUA/132' class='show'></image>-->
+      <view class="show"></view>
+    </view>
+    <view>绑定手机号</view>
+    <view>请先绑定手机号在进行此操作</view>  
+    <button open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">
+     
+     <!--<image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWq4icl43rnBA20xfaBL7zK2e1CeiaXbA7Cibj8C7UicLZG9WANTwRMtC5uiaergkfjbIX99hqaxKbpUA/132' class='iconWx'></image>-->
+     微信用户一键绑定
+    </button>
+  </view>
+</view>
+<!--登录弹窗-->
+
+
+</view>

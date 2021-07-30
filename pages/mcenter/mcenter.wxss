@@ -1,0 +1,11 @@
+/* pages/mcenter/mcenter.wxss */
+.mcontainer{position: relative;}
+.memberlist{width: 100%;height: 100%;}
+.memberlist image{width: 100%;height: 1479rpx;} 
+
+.mblist{position: absolute;bottom:10%;left:8%;width: 84%;height:400rpx;}
+.mblist view {display: inline-block;}
+.mblist view:nth-child(odd){margin-right: 30rpx;}
+.mblist view:first-child{margin-bottom: 20rpx;}
+.mblist view{width: 300rpx;height: 180rpx;}
+.mblist view image{width:300rpx;height: 180rpx;}

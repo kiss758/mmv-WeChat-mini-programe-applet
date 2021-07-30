@@ -1,0 +1,42 @@
+<view class="intergralbox">
+    <view class="bgpc">
+      <image src="/images/exchange/bgpicture.png"></image>
+    </view>  
+    <view class="intergral">
+      <view>
+          <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view>
+        <view>{{userInfo.nickName}}</view>
+        <view>{{userInfo.member.integral>=0?userInfo.member.integral:'0'}} 积分</view>
+      </view>
+      <view>
+         <image src="/images/exchange/carticon.png"></image>
+      </view>
+    </view>
+    <view class="members">
+       <view>
+           <image src="/images/exchange/jf.png"></image>
+       </view>
+       <view>
+          会员专享
+       </view>
+    </view>
+    <view class="mline"></view>
+
+    <view class="specialdata">
+        <block wx:for="{{integral_list}}" wx:key="item.integral_goods_id">
+           <view class="specialitem" data-id='{{item.integral_goods_id}}'>
+              <view wx:for="{{item.image}}">
+                <image src="{{item.file_path}}"></image>
+              </view>
+              <view>
+                <view>{{item.integral_goods_name}}</view>
+                <view>{{item.integral_value}}积分</view>
+              </view> 
+            </view>
+        </block>
+       
+       
+    </view>
+</view>

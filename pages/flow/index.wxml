@@ -1,0 +1,71 @@
+<view class="container p-bottom">
+  <view class="flow-list">
+    <view wx:if="{{goods_list.length}}">
+      <view wx:for="{{goods_list}}" wx:key="this">
+        <view class="dish-item" data-index="{{index}}" style="{{item.txtStyle}}">
+          <view class="dish-item-wrp">
+            <!--复选按钮-->
+            <view class="dish-left">
+              <image wx:if="{{item.selected}}" data-checked="{{selectAllStatus}}" data-index="{{index}}"
+                class="radio_chek" bindtap="selectList" src='../../images/b_select.png'></image>
+              <image wx:else src='../../images/n_select.png' data-checked="{{selectAllStatus}}" class="radio_chek"
+                data-index="{{index}}" bindtap="selectList"></image>
+            </view>
+            <navigator url="../goods/index?goods_id={{item.goods_id}}">
+              <view bindtap="flowDetail" class="dish-item-pic">
+                <image class="image" src="{{item.image[0].file_path}}"></image>
+              </view>
+            </navigator>
+            <view class="dish-item-info">
+              <navigator url="../goods/index?goods_id={{item.goods_id}}">
+                <view>
+                  <text bindtap="flowDetail"
+                    class=" {{item.spec_type===20?'onelist-hidden':'twolist-hidden'}} f-30 col-3">{{item.goods_name}}</text>
+                </view>
+                <view class="goods-attr">
+                  <text class="col-7 f-24">{{item.goods_sku.goods_attr}}</text>
+                </view>
+                <view class="wx-goods_price">
+                  <text class="dish-item-money">￥{{item.goods_price}} </text>
+                </view>
+              </navigator>
+              <!-- 商品递减  递增 -->
+              <view class="selectNumber">
+                <button bindtap="minusCount" class="default {{item.total_num>1?'':' default-active'}}"
+                  data-index="{{index}}" data-spec-id="{{item.goods_spec_id}}" type="default">-</button>
+                <input bindinput="import" disabled="{{true}}" type="number" value="{{item.total_num}}"></input>
+                <button bindtap="addCount" class="default" data-index="{{index}}" data-spec-id="{{item.goods_spec_id}}"
+                  type="default">+</button>
+              </view>
+              <!-- 删除商品 -->
+              <view catchtap="del" class="flow-dete" data-goods-id="{{item.goods_id}}"
+                data-spec-id="{{item.goods_spec_id}}">
+                <text class="iconfont icon-lajixiang"></text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 全选 -->
+      <view class="cart-tab-wrp">
+        <view class="cart-item-total cart-tab-item">
+          <image wx:if="{{selectAllStatus}}" class="total-select" bindtap="selectAll" src='../../images/b_select.png'>
+          </image>
+          <image wx:else class="total-select" bindtap="selectAll" src='../../images/n_select.png'></image>
+          <text class='sel_count_name'>全选</text>
+          <text class="cart-item-total-price h4">合计：￥{{totalPrice}}</text>
+        </view>
+        <view class="cart-sub">
+          <view bindtap="submit" class="cart-tab-item-btn h4">去结算</view>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="ectouch-notcont">
+        <!-- <text class="iconfont icon-meiyougengduo"></text> -->
+        <text class="cont">您的购物车空空入也</text>
+        <view bindtap="goShopping" class="flow-btn-min">去逛逛</view>
+      </view>
+    </view>
+  </view>
+</view>

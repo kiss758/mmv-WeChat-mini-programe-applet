@@ -1,0 +1,47 @@
+<view class="h_container">
+   <view class="h_title">退货退款的产品</view>
+
+
+   <view class="content">我们只受理从本商城销售的产品退货。凡是从本商城以外渠道购买的产品，请联系原购买地协商退货。</view>
+   <view class="content">顾客在本商城订购产品，如果发现外包装在递送过程中已经破损，请您当场拒收，请快递服务商带回。</view>
+   <view class="content">凡收到货物后发现以下情形，可以在签收之日起的7天内无条件退货：</view>
+   <view class="content">1）与顾客在本商城订购的产品不同，且不影响二次销售；</view>
+   <view class="content">2）收到货物时即发现产品已过期；</view>
+   <view class="content">凡出现上诉情况，我们将退还相应的货款并承担因退货而产生的运费。</view>
+
+   <view class="content">顾客在本商城订购产品，使用后如出现不适，在收货后7天之内可申请退货退款，但必须满足以下条件；</view>
+   <view class="content">1）提供由中国大陆地区二级以上医院消化科&皮肤科出具的诊断报告；</view>
+   <view class="content">2）诊断报告的出具日期系顾客签收货物后；</view>
+   <view class="content">3）诊断报告上明确指出该不适现象系由胶原蛋白&护妆品引起；</view>
+   <view class="content">凡出现上述情形，我们将退还相应的货款并承担因退货而产生的运费。</view>
+
+
+
+
+   <view class="h_title">退货退款的运费处理</view>
+   <view class="content">如果因为mmV官方小程序商城的失误造成退货（收到产品并非订购的产品，或包装出现损坏等），退款中将包含您支付的运费。对于您在商城上订购的产品，不能到品牌其他官方渠道办理退货。</view>
+
+
+
+
+   <view class="h_title">退货退款的流程</view>
+   <view class="content">如果您想对在mmV官方小程序商城购买的产品进行退货退款，可以通过以下方式：</view>
+   <!--<view class="content">方式1：登录本商城个人订单【订单中心】，按步骤进行退款申请流程；</view>-->
+   <view class="content">方式1：联系客服代表申请退款；</view>
+
+    <view class="content">1）请致电官方商城热线：告知所遇到的问题，并根据我们客服人员指示进行退货；</view>
+    <view class="content">     2）退换货的商品必须包装完好无损,，没有使用, 没有拆封, 并不影响二次销售，否则将不予退换；</view>
+    <view class="content">     3）退货时请附上随产品一起送达的送货单及发票；</view>
+    <view class="content">     4）在必要情况下提供产品质量问题证明（过敏报告、产品图片等）</view>
+    <view class="content">     5）为了您的便利，请在致电我们客户服务部门时，告知您购买产品的订单编号；</view>
+    <view class="content">     6）最后根据客服人员提示将订单快递寄回。</view>
+
+    <view class="content">收到退货并验明无误后，我们将在5个工作日内安排退款，请耐心等待。如果您是通过网上银行支付的，那么款项将退入您的当时支付的银行卡中（银行到账最长7个工作日）。</view>
+    <view class="h_title">支付说明</view>
+    <view class="content">亲爱的V粉，mmV官方小程序目前仅支持所在地为中国大陆的支付，如有不便，敬请谅解。</view>
+    <view class="h_title">客服专线</view>
+    <view class="content">如果您有任何关于mmV官方小程序商城的购买流程、产品、活动等需要咨询，可致电mmV官方客服热线：          ，也可联系在线客服。</view>
+    <view class="content">电话客服工作时间为（星期一 至 星期五 09:00-18:00）</view>
+    <view class="content">在线客服工作时间为（星期一 至 星期日 09:00-22:00）</view>
+
+</view>

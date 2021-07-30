@@ -1,0 +1,26 @@
+<view class="show_container">
+   <view class="s_flex">
+      <view>用 户 名</view>
+      <view>{{userInfo.nickName}}</view>
+   </view>
+   <view class="b_line"></view>
+   <!-- <view class="s_flex">
+       <view class="birthday">生   日</view>
+       <view>{{userInfo.member.birthday}}</view>
+       <view class="b_details">（生日信息仅可修改一次）</view>
+   </view> -->
+   <!-- <view class="b_line"></view> -->
+   <view class="s_flex">
+       <view>手 机 号</view>
+       <view>{{userInfo.member.phone}}</view>
+   </view>
+  <view class="b_line"></view>
+  <view class="s_tip">
+      
+    <!--
+       <view>*mmV生日礼会在您生日当月的月初发放到【个人中心-我的福利】中，请注意查收</view>
+       <view>*生日当月消费可获赠双倍积分</view>
+       -->
+       <view>*如需修改个人信息请联系客服</view>
+  </view>
+</view>

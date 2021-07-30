@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "全部商品",
+    "singlePage": {
+        "navigationBarFit": "squeezed"
+      }
+}

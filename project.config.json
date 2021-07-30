@@ -1,0 +1,254 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": false,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "showES6CompileOption": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.16.1",
+  "appid": "wx9df550f59cdb60e1",
+  "projectname": "dome1",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/huiyuan/index",
+          "pathName": "pages/huiyuan/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/form/index",
+          "pathName": "pages/form/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/get_userpz/index",
+          "pathName": "pages/get_userpz/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/get_user_info/index",
+          "pathName": "pages/get_user_info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages1/nihuawocai/index",
+          "pathName": "pages1/nihuawocai/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/index",
+          "pathName": "pages/flow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "分类",
+          "pathName": "pages/category/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "pages/goods/index",
+          "pathName": "pages/goods/index",
+          "query": "goods_id=10022",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/user/index",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/member/member",
+          "pathName": "pages/member/member",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/index",
+          "pathName": "pages/flow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/index",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/help/help",
+          "pathName": "pages/help/help",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/showmember/showmember",
+          "pathName": "pages/showmember/showmember",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/official/official",
+          "pathName": "pages/official/official",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/integral/integral",
+          "pathName": "pages/integral/integral",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mcenter/mcenter",
+          "pathName": "pages/mcenter/mcenter",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/quick/quick",
+          "pathName": "pages/quick/quick",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/order/index",
+          "pathName": "pages/order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/exchange/exchange",
+          "pathName": "pages/exchange/exchange",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/index",
+          "pathName": "pages/flow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test02/test02",
+          "pathName": "pages/test02/test02",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/flow/checkout",
+          "pathName": "pages/flow/checkout",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/integmsg/integmsg",
+          "pathName": "pages/integmsg/integmsg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/c/index",
+          "pathName": "pages/flow/checkout",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

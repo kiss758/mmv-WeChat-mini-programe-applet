@@ -1,0 +1,46 @@
+.slide-image {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    background: #fff;
+}
+
+.banner-box {
+    height: 750rpx;
+    border-bottom: 1rpx solid #e4e4e4;
+}
+
+.user-orderJtou {
+    color: #999;
+    font-size: 26rpx;
+    position: absolute;
+    top: 50%;
+    margin-top: -9rpx;
+}
+
+.goods-fixed-icon text {
+    color: #fff;
+    font-size: 22rpx;
+    text-align: center;
+    display: block;
+}
+
+
+.footer-box{position: fixed;bottom: 0;left:0;width: 100%;display: flex;}
+
+
+.msgbtn{width: 50%;height: 100rpx;background: #fff;display: flex;align-items: center;}
+.msgbtn image{height: 35rpx;width: 35rpx;}
+.btncontact{width: 100%; position: absolute; display: inline-block;top: 0;left: 0;opacity: 0;}
+
+
+.msgbtn>view{width: 33.333333%;text-align: center;}
+.msgbtn view{font-size: 20rpx;}
+.msgbtn>view>view:nth-child(2){margin-top: 10rpx;}
+.btnCart{background: #d41a46;height: 100rpx;width: 50%;display: flex;}
+.nostock_num{background: #dddddd;height: 100rpx;width: 50%;display: flex;justify-content: center;align-items: center;}
+.btnCart view{width: 50%;font-size: 30rpx;color: white;line-height: 100rpx;text-align: center;}
+.btnCart view:first-child{background: #181818;}
+
+.tipcart{width: 30rpx;height: 30rpx;background: red;color: white;position: absolute;top:-10rpx;right: 20rpx;border-radius:100%;}

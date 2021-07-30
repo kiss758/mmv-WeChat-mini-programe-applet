@@ -1,0 +1,171 @@
+<view class="container p-bottom">
+  <!-- 配送地址 -->
+  <view catchtap="selectAddress">
+    <view wx:if="{{address.address_id}}">
+      <view class="b-f">
+        <view class="flow-checkout-header dis-box">
+          <text class="iconfont icon-dingwei1"></text>
+          <view class="flow-header-left">
+            <view class="flow-checkout-admin f-30 col-3">
+              <text>{{address.name}}</text>
+              <text>{{address.phone}}</text>
+              <text class="col-m"></text>
+            </view>
+            <view class="flow-checkout-address">
+              {{address.region.province}} {{address.region.city}} {{address.region.region}} {{address.detail}}
+            </view>
+          </view>
+          <view class="flow-header-right pr-12">
+            <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="flow-checkout-header dis-box">
+        <text class="iconfont icon-dingwei1"></text>
+        <view class="flow-header-left">
+          <view class="f-28 col-6">去选择配送地址</view>
+        </view>
+        <view class="flow-header-right no-flow p-r15">
+          <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 商品列表 -->
+  <view class="m-top20">
+    <view class="checkout_list " wx:for="{{goods_list}}" wx:key="this">
+      <navigator url="../goods/index?goods_id={{item.goods_id}}">
+        <view class="dis-flex flow-shopList" data-index="{{index}}">
+          <view class="flow-list-left">
+            <image mode="scaleToFill" src="{{item.image[0].file_path}}"></image>
+          </view>
+          <view class="flow-list-right box-flex">
+            <text class="f-30 col-3 twolist-hidden">{{item.goods_name}}</text>
+            <text class="f-26 col-7">{{item.goods_sku.goods_attr}}</text>
+            <view class="flow-list-cont">
+              <text class="flow-cont">￥{{item.goods_price}}</text>
+              <text class="small">×{{item.total_num}}</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="flow-num-box b-f padding-box">
+      <text>共{{order_total_num}}件商品，合计：</text>
+      <text class="flow-money col-m">￥{{order_total_price}}</text>
+    </view>
+  </view>
+
+
+  <!-- 商品金额 -->
+  <view class="flow-all-money b-f padding-box m-top20">
+    <view class="dis-flex flow-all-list">
+      <text class="flex-five">商品总金额:</text>
+      <view class="flex-five t-r">
+        <text class="col-m">￥{{order_total_price}}</text>
+      </view>
+    </view>
+    <view class="dis-flex flow-all-list">
+      <text class="flex-five">配送费用:</text>
+      <view class="flex-five t-r">
+        <view wx:if="{{address.address_id}}">
+          <text class="col-m" wx:if="{{intra_region}}">+￥{{express_price}}</text>
+          <text wx:else>不在配送范围</text>
+        </view>
+        <view wx:else>
+          <text class="col-7">请先选择配送地址</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 提交订单 -->
+  <view class="flow-fixed-footer b-f m-top10">
+    <view class="dis-flex chackout-box">
+      <view class=" chackout-left pl-12 ">实付款：
+        <text class="col-m">￥{{order_pay_price}}</text>
+      </view>
+      <view bindtap="submitOrder" class="chackout-right">
+        <text class="flow-btn">提交订单</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="changelist" id="the-id" wx:if="{{display === 0}}">
+    <view>
+      <view bindtap="toolTip">
+        <view>会员礼兑</view>
+        <view>
+          <image src="/images/rt.png"></image>
+        </view>
+      </view>
+      <view style="font-size:26rpx;color:#5f5858;">会员积分：{{integral}}分</view>
+      <view class="member_integral" wx:if="{{isShow}}">
+        <view class="member_integral_triangle"></view>
+        <view>积分兑礼活动说明</view>
+        <scroll-view scroll-y="true" class="scroll-view">
+          <view class="member_integral_content">
+            <view>
+              <text>1.兑换数量：</text>积分兑礼数量无限，可兑当前用户积分总值
+            </view>
+            <view>
+              <text>2.配送方式：</text>拍下订单后，兑换的赠品会随订单同时发出。
+            </view>
+            <view>
+              <text>3.积分变动：</text>使用积分兑换赠品后积分自动扣除，若积分不足则无法兑换赠品。
+            </view>
+            <view>
+              <text>4.产品退换：</text>包含积分兑礼的订单，在发货前取消订单，原订单已扣除的积分在5个工作日内退还到原有账户；发货后退货退款，积分概不退还。
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+    <view class="prolist">
+      <scroll-view scroll-x style="width: 100%; white-space: nowrap;">
+        <block wx:for="{{integral_list}}">
+          <view class="proitem" data-id='{{item.integral_goods_id}}' data-inchecked="{{item.selected}}"
+            data-index='{{index}}' bindtap='itemSelected'>
+            <view>
+              <view class="" wx:for="{{item.image}}">
+                <image src="{{item.file_path}}" mode="widthFix"></image>
+              </view>
+              <image class='smalltip' src="{{item.selected?'../../images/b_select.png':'../../images/c_select.png'}}">
+              </image>
+            </view>
+            <view>{{item.integral_goods_name}} </view>
+            <view>{{item.integral_value}}积分</view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+  <!-- 快捷导航 -->
+  <view class="filter-menu {{nav_select?'active':''}}">
+    <view class="filter-menu-list ts-5">
+      <custom-ul>
+        <custom-li bindtap="nav" data-index="home">
+          <text class="iconfont icon-home"></text>
+        </custom-li>
+        <custom-li bindtap="nav" data-index="fenlei">
+          <text class="iconfont icon-fenlei"></text>
+        </custom-li>
+        <custom-li bindtap="nav" data-index="cart">
+          <text class="iconfont icon-cart"></text>
+        </custom-li>
+        <custom-li bindtap="nav" data-index="profile">
+          <text class="iconfont icon-profile"></text>
+        </custom-li>
+        <custom-li class="w"></custom-li>
+      </custom-ul>
+    </view>
+    <view bindtap="commonNav" class="filter-menu-title"></view>
+  </view>
+
+</view>

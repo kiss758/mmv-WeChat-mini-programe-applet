@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="common-header-xian"></view>
+   <view class="searchbox">
+    <navigator class="cont" hover-class="none" openType="navigate" url="../search/index">
+       <view>人气胶原蛋白肽D完美年度套装</view>
+       <view>
+          <image src="/images/search.png"></image>
+       </view>
+    </navigator>
+  </view>
+  <view class="cate-content">
+      <scroll-view class="cate-left f-28">
+         <view class="item" wx:for="{{list}}" wx:key="index">
+              <view class="title" data-id="{{item.category_id}}" class=" {{showclass==item.category_id?'tb':'title'}}"  data-name="{{item.name}}"  data-index="{{index}}" bindtap="leftnav">
+               <view class="bgbox"></view>{{item.name}}
+              </view>
+              <view  wx:if="{{showIndex==index}}">
+                <view wx:for="{{item.child}}" wx:key="index"  wx:for-item="child"  >
+                    <view  bindtap="selectNav"    data-id="{{child.category_id}}" data-name="{{child.name}}" class="detail {{child.category_id==itemindex?'cate-active':''}}">{{child.name}}</view>
+                </view>
+              </view>
+          </view>
+      </scroll-view>
+      <scroll-view class="cate-right b-f" scroll-y="true">
+          <view class="cate-name">{{listname}}</view> 
+          <view wx:if="{{list[curIndex]}}">
+            <view class="cate-right-cont">
+              <view class="cate-two-box">
+                <view class=" cate-cont-box dis-flex">
+                  <view class="flex-three" data-list="{{index}}" wx:for="{{list2}}" wx:key="cit">
+                    <navigator hover-class="none" url="../goods/index?goods_id={{item.goods_id}}">
+                      <view class="cate-img" id="{{item.goods_id}}">
+                        <image src="{{item.image[0].file_path}}"></image>
+                      </view>
+                      <text>{{item.goods_name}}</text>
+                      <text>{{item.spec[0].goods_box}}</text>
+                      <text>¥{{item.spec[0].goods_price}}</text>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view wx:else></view>
+      </scroll-view>
+  </view>
+</view>

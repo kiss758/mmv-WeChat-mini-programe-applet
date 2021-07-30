@@ -1,0 +1,145 @@
+.flow-header-left {
+    padding-left: 90rpx;
+}
+
+.changelist {
+    width: 700rpx;
+    height: 440rpx;
+    margin: 0 auto;
+    margin-top: 27rpx;
+    background: #fff;
+}
+
+.changelist>view:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 52rpx;
+    margin-left: 31rpx;
+    margin-right: 31rpx;
+    margin-bottom: 32rpx;
+    padding-top: 20rpx;
+    position: relative;
+}
+
+.changelist>view:first-child>view:first-child {
+    display: flex;
+}
+
+/* .changelist>view:first-child>view:first-child {
+    font-size: 30rpx;
+    margin-right: 11rpx;
+}*/
+
+.changelist>view:first-child image {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.proitem {
+    width: 200rpx;
+    margin-left: 25rpx;
+    display: inline-block;
+}
+
+.proitem>view:first-child {
+    width: 200rpx;
+    height: 200rpx;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1
+}
+
+.proitem>view:first-child>view {
+    width: 200rpx;
+    height: 200rpx;
+    background-color: #f7f7f7;
+}
+
+.proitem>view:first-child>view>image {
+    width: 200rpx !important;
+    height: 200rpx !important;
+}
+
+.smalltip {
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    z-index: 10;
+    top: 12rpx;
+    right: 16rpx;
+}
+
+.proitem>view:nth-child(2) {
+    font-size: 20rpx;
+    text-align: center;
+    margin-top: 23rpx;
+    margin-bottom: 14rpx;
+}
+
+.proitem>view:nth-child(3) {
+    font-size: 24rpx;
+    text-align: center;
+}
+
+
+/* 会员兑礼  tooltip*/
+
+.member_integral {
+    position: absolute;
+    top: 86rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    width: 92%;
+    background: #fff;
+    border-radius: 20rpx;
+    box-shadow: 0rpx 0rpx 30rpx #BDBDBD;
+}
+
+.member_integral::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -5.5%;
+    left: 20%;
+    border-top: 20rpx solid transparent;
+    border-bottom: 14rpx solid #Fff;
+    border-left: 14rpx solid transparent;
+    border-right: 14rpx solid transparent;
+    box-shadow: 30rpx 30rpx 30rpx #F9FBE7;
+}
+
+.member_integral>view:nth-child(2) {
+    color:#d41c50;
+    text-align: center;
+    font-size: 28rpx;
+    margin-top: 30rpx;
+}
+.member_integral_content>view{
+    font-size: 24rpx;
+}
+.member_integral_content>view>text{
+    
+    font-weight: 700;
+    font-size: 24rpx;
+}
+
+.scroll-view {
+    width: 100%;
+    /* height: 350rpx; */
+}
+
+.scroll-view view {
+    padding: 15rpx 20rpx;
+}
+/* .scroll-view view:last-child{
+} */
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+    display: none;
+}

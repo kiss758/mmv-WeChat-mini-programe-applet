@@ -1,0 +1,8 @@
+.show_container{width: 90%;margin:40rpx auto;font-size: 24rpx;height: 600rpx;background: #fff;box-sizing: content-box;padding-top: 40rpx;}
+.s_flex{position: relative;display: flex;height: 90rpx;line-height: 90rpx;margin-left: 50rpx;font-weight: bold;}
+.s_flex>view:first-child{margin-right: 20rpx;width:100rpx;text-align: center;font-weight: bold;}
+.birthday{}
+.b_details{position: absolute;right:40rpx;color: #ccc;font-weight: normal;}
+.b_line{width: 84%;margin: 0 auto;border: 0.5rpx solid #ccc;margin-left:50rpx;}
+.s_tip{margin: 0 auto;margin-top: 50rpx;width:85%;}
+.s_tip view{margin-bottom: 10rpx;letter-spacing:1rpx;line-height: 30rpx;}
